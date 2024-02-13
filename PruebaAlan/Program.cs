@@ -19,6 +19,42 @@ namespace PruebaAlan
             Ejercicio5();
             Ejercicio6();
             Ejercicio7();
+            Ejercicio8();
+            Ejercicio9();
+            Ejercicio10();
+            Ejercicio11();
+            Ejercicio12();
+            Ejercicio13();
+        }
+
+        private static void Ejercicio13()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio12()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio11()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio10()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio9()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio8()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio7()
@@ -167,6 +203,114 @@ namespace PruebaAlan
 
             // Print the lowest number
             Console.WriteLine(Math.Min(numberTwoSqrt, numberOneSqrt));
+        }
+
+        /// <summary>
+        /// Ejercicio 8 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio8(string[] args)
+        {
+            double numberOne = 6.5;
+            double numberTwo = 4;
+
+            // Raise numberOne to the numberTwo power
+            Console.WriteLine(Math.Pow(numberOne, numberTwo));
+
+            // Round numberOne up
+            Console.WriteLine(Math.Ceiling(numberOne));
+
+            // Find the larger number between numberOne and numberTwo
+            Console.WriteLine(Math.Max(numberOne, numberTwo));
+        }
+
+        /// <summary>
+        /// Ejercicio 9 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio9(string[] args)
+        {
+            // First string variable
+            string firstSentence = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.";
+
+            // Second string variable
+            string firstSpeech = "\"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\"";
+
+            Console.WriteLine(firstSentence);
+            Console.WriteLine("\n");
+            Console.WriteLine(firstSpeech);
+
+            // Print variable and newline
+        }
+
+        /// <summary>
+        /// Ejercicio 10 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio10(string[] args)
+        {
+            // Declare the variables
+            string beginning = " Be aware the people from Mars are on their way to earth";
+            string middle = "Came without any previous messeage, all of the sudden they were on your lands ";
+            string end = " As how they came, that's how they went, and left the planet taking inside of their ships hostages ";
+
+            // Concatenate the string and the variables
+            string story = beginning + middle + " and hidding in the woods." + end + ".";
+
+            // Print the story to the console
+            Console.WriteLine(story);
+        }
+
+        /// <summary>
+        /// Ejercicio 11 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio11(string[] args)
+        {
+            // Declare the variables
+            string beginning = "Once upon a time,";
+            string middle = "The kid climbed a tree";
+            string end = "Everyone lived happily ever after.";
+
+            // Interpolate the string and the variables
+            string story = $"{beginning} it was a beautiful day. {middle} and the birds flew through the sky. {end}";
+
+            // Print the story to the console
+            Console.WriteLine(story);
+        }
+
+        /// <summary>
+        /// Ejercicio 12 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio12(string[] args)
+        {
+            // Create password
+            string password = "a92301j2add";
+
+            // Get password length
+            int passwordLength = password.Length;
+
+            // Check if password uses symbol
+            int passwordCheck = password.IndexOf("!");
+
+            // Print results
+            Console.WriteLine($"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
+        }
+
+        private static void Ejercicio13(string[] args)
+        {
+            // dna strand
+            string startStrand = "ATGCGATGAGCTTAC";
+
+            // find location of "tga"
+            int tga = startStrand.IndexOf("TGA");
+
+            // start point and stop point variables
+            int startPoint = 0;
+            int length = tga + 3;
+
+            // define final strand
+            string dna = startStrand.Substring(startPoint, length);
+            Console.WriteLine(dna);
+
+            // DNA mutation search
+            Console.WriteLine(dna[3]);
         }
     }
 }
