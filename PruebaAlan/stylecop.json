@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "documentationRules": {
+      "companyName": "PriceTravel Holding",
+      "copyrightText": "{companyName}",
+      "documentationCulture": "es-MX"
+    },
+    "namingRules": {
+      "allowedHungarianPrefixes": [ "dt" ]
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement": "outsideNamespace"
+    }
+  }
+}
