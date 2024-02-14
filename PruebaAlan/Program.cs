@@ -10,7 +10,7 @@ namespace PruebaAlan
         /// <summary>
         /// Funcion de entrada del programa del programa
         /// </summary>
-        public static void Main(string[] args)
+        public static void Ejercicio18(string[] args)
         {
             Ejercicio1();
             int ages = Ejercicio2();
@@ -406,6 +406,16 @@ namespace PruebaAlan
             bool friendNeeds = beach || hiking;
             bool tripDecision = yourNeeds && friendNeeds;
             Console.WriteLine(tripDecision);
+        }
+
+        static void Main(string[] args)
+        {
+            int socks = 6;
+            if (socks <= 3)
+            {
+                Console.WriteLine("Time to do laundry!");
+            }
+
         }
     }
 }
