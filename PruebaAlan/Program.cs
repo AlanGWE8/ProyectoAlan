@@ -25,6 +25,30 @@ namespace PruebaAlan
             Ejercicio11();
             Ejercicio12();
             Ejercicio13();
+            Ejercicio14();
+            Ejercicio15();
+            Ejercicio16();
+            Ejercicio17();
+        }
+
+        private static void Ejercicio17()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio16()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio15()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio14()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio13()
@@ -293,6 +317,9 @@ namespace PruebaAlan
             Console.WriteLine($"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
         }
 
+        /// <summary>
+        /// Ejercicio 13 del curso con valor Void
+        /// </summary>
         private static void Ejercicio13(string[] args)
         {
             // dna strand
@@ -311,6 +338,74 @@ namespace PruebaAlan
 
             // DNA mutation search
             Console.WriteLine(dna[3]);
+        }
+
+        /// <summary>
+        /// Ejercicio 14 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio14(string[] args)
+        {
+            // Script line
+            string script = "Close on a portrait of the HANDSOME PRINCE --" +
+            " as the BEAST'S giant paw slashes it.";
+
+            // Get camera directions
+            int charPosition = script.IndexOf("Close");
+            int length = "Close on".Length;
+            string cameraDirections = script.Substring(charPosition, length);
+
+            // Get scene description
+            charPosition = script.IndexOf("a portrait");
+            string sceneDescription = script.Substring(charPosition);
+
+            // Make camera directions uppercase
+            cameraDirections = cameraDirections.ToUpper();
+
+            // Make scene description lowercase
+            sceneDescription = sceneDescription.ToLower();
+
+            Console.WriteLine(cameraDirections);
+
+            // Print results
+        }
+
+        /// <summary>
+        /// Ejercicio 15 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio15(string[] args)
+        {
+            bool answerOne = 500 < 20;
+
+            bool respuestaTwo = 40 > 5;
+
+            Console.WriteLine(answerOne && respuestaTwo);
+        }
+
+        /// <summary>
+        /// Ejercicio 16 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio16(string[] args)
+        {
+            double timeToDinner = 4;
+            double distance = 95;
+            double rate = 30;
+            double tripDuration = distance / rate;
+            bool answer = tripDuration <= timeToDinner;
+            Console.WriteLine(answer);
+        }
+
+        /// <summary>
+        /// Ejercicio 17 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio17(string[] args)
+        {
+            bool beach = true;
+            bool hiking = false;
+            bool city = true;
+            bool yourNeeds = beach && city;
+            bool friendNeeds = beach || hiking;
+            bool tripDecision = yourNeeds && friendNeeds;
+            Console.WriteLine(tripDecision);
         }
     }
 }
