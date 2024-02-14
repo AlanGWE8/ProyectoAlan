@@ -29,6 +29,36 @@ namespace PruebaAlan
             Ejercicio15();
             Ejercicio16();
             Ejercicio17();
+            Ejercicio18();
+            Ejercicio19();
+            Ejercicio20();
+            Ejercicio21();
+            Ejercicio22();
+        }
+
+        private static void Ejercicio22()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio21()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio20()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio19()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio18()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio17()
@@ -408,14 +438,103 @@ namespace PruebaAlan
             Console.WriteLine(tripDecision);
         }
 
-        static void Main(string[] args)
+        /// <summary>
+        /// Ejercicio 18 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio18(string[] args)
         {
             int socks = 6;
             if (socks <= 3)
             {
                 Console.WriteLine("Time to do laundry!");
             }
+        }
 
+        /// <summary>
+        /// Ejercicio 19 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio19(string[] args)
+        {
+            int people = 12;
+            string weather = "nice";
+            if (people <= 10 && weather == "nice")
+            {
+                Console.WriteLine("SaladMart");
+            }
+            else
+            {
+                Console.WriteLine("Soup N Sandwich");
+            }
+        }
+
+        /// <summary>
+        /// Ejercicio 20 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio20(string[] args)
+        {
+            int guests = 0;
+            if (guests >= 4)
+            {
+                Console.WriteLine("Catan");
+            }
+            else if (guests >= 1)
+            {
+                Console.WriteLine("Innovation");
+            }
+            else
+            {
+                Console.WriteLine("Solitaire");
+            }
+        }
+
+        /// <summary>
+        /// Ejercicio 21 del curso con valor Void
+        /// </summary>
+        static void Ejercicio21(string[] args)
+        {
+            // Code from Checkpoint 1
+            // string genre = "Horror";
+
+            // Code from Checkpoint 5
+            Console.WriteLine("Choose a movie genre: ");
+            string genre = Console.ReadLine();
+
+            switch (genre)
+            {
+                case "Drama":
+                    Console.WriteLine("Citizen Kane");
+                    break;
+
+                case "Comedy":
+                    Console.WriteLine("Duck Soup");
+                    break;
+
+                case "Adventure":
+                    Console.WriteLine("King Kong");
+                    break;
+
+                case "Horror":
+                    Console.WriteLine("Psycho");
+                    break;
+
+                case "Science Fiction":
+                    Console.WriteLine("2001: A Space Odyssey");
+                    break;
+
+                default:
+                    Console.WriteLine("No movie found");
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Ejercicio 22 del curso con valor Void
+        /// </summary>
+        private static void Main(string[] args)
+        {
+            int pepperLength = 4;
+            string message = (pepperLength >= 3.5) ? " ready!" : "wait a little longer";
+            Console.WriteLine(message);
         }
     }
 }
