@@ -42,6 +42,12 @@ namespace PruebaAlan
             Ejercicio28();
             Ejercicio29();
             Ejercicio30();
+            Ejercicio31();
+        }
+
+        private static void Ejercicio31()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio30()
@@ -758,5 +764,16 @@ private static bool HitGround(string s)
     return s == "meteorite";
 }
 
+private static void Ejercicio31(string[] args)
+{
+    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+    bool makesContact = Array.Exists(spaceRocks, s => s == "meteorite");
+
+    if (makesContact)
+    {
+        Console.WriteLine("At least one space rock has reached the Earth's surface!");
+    }
+} 
 
 }
