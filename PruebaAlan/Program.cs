@@ -34,6 +34,30 @@ namespace PruebaAlan
             Ejercicio20();
             Ejercicio21();
             Ejercicio22();
+            Ejercicio23();
+            Ejercicio24();
+            Ejercicio25();
+            Ejercicio26();
+        }
+
+        private static void Ejercicio26()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio25()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio24()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio23()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio22()
@@ -490,7 +514,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 21 del curso con valor Void
         /// </summary>
-        static void Ejercicio21(string[] args)
+        private static void Ejercicio21(string[] args)
         {
             // Code from Checkpoint 1
             // string genre = "Horror";
@@ -530,11 +554,88 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 22 del curso con valor Void
         /// </summary>
-        private static void Main(string[] args)
+        private static void Ejercicio22(string[] args)
         {
             int pepperLength = 4;
             string message = (pepperLength >= 3.5) ? " ready!" : "wait a little longer";
             Console.WriteLine(message);
+        }
+
+        /// <summary>
+        /// Ejercicio 23 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio23(string[] args)
+        {
+            Console.WriteLine(DecoratePlanet("Jupiter"));
+        }
+
+        private static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+        }
+
+        /// <summary>
+        /// Ejercicio 24 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio24(string[] args)
+        {
+            Console.WriteLine(DecoratePlanet("Mars"));
+            Console.WriteLine("Is Pluto really a dwarf...?");
+            Console.WriteLine(IsPlutoADwarf());
+            Console.WriteLine("Then how many planets are there in the galaxy...?");
+            Console.WriteLine(CountThePlanets());
+        }
+
+        private static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+        }
+
+        private static bool IsPlutoADwarf()
+        {
+            bool answer = true;
+            return answer;
+        }
+
+        private static string CountThePlanets()
+        {
+            return "8 planets, usually";
+        }
+
+        /// <summary>
+        /// Ejercicio 25 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio25(string[] args)
+        {
+            string ageAsString = "102";
+            string nameAsString = "Granny";
+            int ageAsInt;
+            bool outcome;
+
+            outcome = int.TryParse(ageAsString, out ageAsInt);
+            Console.WriteLine(outcome);
+            Console.WriteLine(ageAsInt);
+
+            int nameAsInt;
+            bool outcome2;
+            /// Return value outcome2///
+            outcome2 = int.TryParse(nameAsString, out nameAsInt);
+            /// Out variable is nameAsInt///
+            Console.WriteLine(outcome2);
+            Console.WriteLine(nameAsInt);
+        }
+
+        private static void Ejercicio26(string[] args)
+        {
+            string statement = "GARRRR";
+            string murmur = Whisper(statement, out bool marker);
+            Console.WriteLine(murmur);
+        }
+
+        private static string Whisper(string phrase, out bool wasWhisperCalled)
+        {
+            wasWhisperCalled = true;
+            return phrase.ToLower();
         }
     }
 }
