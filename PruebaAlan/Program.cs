@@ -38,6 +38,12 @@ namespace PruebaAlan
             Ejercicio24();
             Ejercicio25();
             Ejercicio26();
+            Ejercicio27();
+        }
+
+        private static void Ejercicio27()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio26()
@@ -625,6 +631,9 @@ namespace PruebaAlan
             Console.WriteLine(nameAsInt);
         }
 
+        /// <summary>
+        /// Ejercicio 26 del curso con valor Void
+        /// </summary>
         private static void Ejercicio26(string[] args)
         {
             string statement = "GARRRR";
@@ -637,5 +646,40 @@ namespace PruebaAlan
             wasWhisperCalled = true;
             return phrase.ToLower();
         }
+
+        /// <summary>
+        /// Ejercicio 27 del curso con valor Void
+        /// </summary>
+        public static void Ejercicio27(string[] args)
+        {
+            // Define variables
+            string destination = "Neptune";
+            string galaxyString = "8";
+            int galaxyInt;
+            string welcomeMessage;
+            bool outcome;
+
+            // Call DecoratePlanet() and TryParse() here
+            String welcomeMessage = DecoratePlanet(destination);
+
+        public static String outcome = Int32.TryParse(galaxyString, out galaxyInt);
+        // Print results
+        Console.WriteLine(welcomeMessage);
+        Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
+
     }
+
+    // Define a method that returns a string
+    public static string DecoratePlanet(string planet)
+    {
+        return $"*..*..* Welcome to {planet} *..*..*";
+    }
+
+    // Define a method with out
+    public static string Whisper(string phrase, out bool wasWhisperCalled)
+    {
+        wasWhisperCalled = true;
+        return phrase.ToLower();
+    }
+}
 }
