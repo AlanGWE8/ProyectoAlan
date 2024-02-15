@@ -39,6 +39,24 @@ namespace PruebaAlan
             Ejercicio25();
             Ejercicio26();
             Ejercicio27();
+            Ejercicio28();
+            Ejercicio29();
+            Ejercicio30();
+        }
+
+        private static void Ejercicio30()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio29()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio28()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio27()
@@ -681,5 +699,64 @@ namespace PruebaAlan
         wasWhisperCalled = true;
         return phrase.ToLower();
     }
+
+    /// <summary>
+    /// Ejercicio 28 del curso con valor Void
+    /// </summary>
+    private static void Ejercicio28(string[] args)
+    {
+        Welcome("Earth");
+        double days = 500;
+        double rotations = DaysToRotations(days);
+        Console.WriteLine($"In {days} days, the Earth has rotated {rotations} time(s).");
+    }
+
+    void Welcome(string v)
+    {
+        throw new NotImplementedException();
+    }
+
+    static double DaysToRotations(double days) => days / 365;
+
+    static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
 }
+/// <summary>
+/// Ejercicio 28 del curso con valor Void
+/// </summary>
+private public static bool IsLong(string word)
+{
+    return word.Length > 8;
+}
+
+private static void Ejercicio29 (string[] args)
+{
+    // Array to be used as first argument
+    string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
+    Array.Find(adjectives, IsLong);
+
+    // Call Array.Find() and 
+    // Pass in the array and method as arguments
+    string firstLongAdjective = Array.Find(adjectives, IsLong);
+
+    Console.WriteLine($"The first long word is: {firstLongAdjective}.");
+}
+
+private static void Ejercicio30(string[] args)
+{
+    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+    bool makesContact = Array.Exists(spaceRocks, (string s) => s == "meteorite");
+
+    if (makesContact)
+    {
+        Console.WriteLine("At least one space rock has reached the Earth's surface!");
+    }
+}
+
+private static bool HitGround(string s)
+{
+    return s == "meteorite";
+}
+
+
 }
