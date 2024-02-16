@@ -43,6 +43,38 @@ namespace PruebaAlan
             Ejercicio29();
             Ejercicio30();
             Ejercicio31();
+            Ejercicio32();
+            Ejercicio33();
+            Ejercicio34();
+            Ejercicio35();
+            Ejercicio36();
+            Ejercicio37();
+            Ejercicio38();
+        }
+
+        private static void Ejercicio36()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio35()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio34()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio33()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio32()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Ejercicio31()
@@ -686,7 +718,7 @@ namespace PruebaAlan
             // Call DecoratePlanet() and TryParse() here
             String welcomeMessage = DecoratePlanet(destination);
 
-        public static String outcome = Int32.TryParse(galaxyString, out galaxyInt);
+        public static string outcome = Int32.TryParse(galaxyString, out galaxyInt);
         // Print results
         Console.WriteLine(welcomeMessage);
         Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
@@ -726,13 +758,11 @@ namespace PruebaAlan
 
     static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
 }
+
 /// <summary>
-/// Ejercicio 28 del curso con valor Void
+/// Ejercicio 29 del curso con valor Void
 /// </summary>
-private public static bool IsLong(string word)
-{
-    return word.Length > 8;
-}
+private public static bool IsLong(string word) => word.Length > 8;
 
 private static void Ejercicio29 (string[] args)
 {
@@ -746,7 +776,9 @@ private static void Ejercicio29 (string[] args)
 
     Console.WriteLine($"The first long word is: {firstLongAdjective}.");
 }
-
+/// <summary>
+/// Ejercicio 30 del curso con valor Void
+/// </summary>
 private static void Ejercicio30(string[] args)
 {
     string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
@@ -758,7 +790,9 @@ private static void Ejercicio30(string[] args)
         Console.WriteLine("At least one space rock has reached the Earth's surface!");
     }
 }
-
+/// <summary>
+/// Ejercicio 31 del curso con valor Void
+/// </summary>
 private static bool HitGround(string s)
 {
     return s == "meteorite";
@@ -774,6 +808,144 @@ private static void Ejercicio31(string[] args)
     {
         Console.WriteLine("At least one space rock has reached the Earth's surface!");
     }
-} 
+}
+/// <summary>
+/// Ejercicio 32 del curso con valor Void
+/// </summary>
+private static void Ejercicio32(string[] args)
+{
+    int[] nums = { 0, 555, 252, 3, 9, 101 };
 
+    bool hasBigNum = Array.Exists(nums, IsBig);
+
+    bool hasSmallNum = Array.Exists(nums, IsSmall);
+
+    bool hasMediumNum = Array.Exists(nums, (n) => n >= 10 && n <= 100);
+
+    Console.WriteLine($"Any big #s? {hasBigNum}");
+    Console.WriteLine($"Any small #s? {hasSmallNum}");
+    Console.WriteLine($"Any medium #s? {hasMediumNum}");
+}
+
+static bool IsBig(int n) => n > 100;
+
+static bool IsSmall(int n) => n < 10;
+
+  }
+
+}
+/// <summary>
+/// Ejercicio 33 del curso con valor Void
+/// </summary>
+private static void Ejercicio33(string[] args)
+{
+    string[] summerStrut;
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+    int[] ratings;
+    ratings = new int[] { 1, 2, 3, 4, 5 };
+}
+
+private static void Ejercicio33(string[] args)
+{
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles", "Los Panchos" };
+
+    if (summerStrut.Length == 8)
+    {
+        Console.WriteLine("summerStrut Playlist is ready to go!");
+    }
+    else if (summerStrut.Length > 8)
+    {
+        Console.WriteLine("Too many songs!");
+    }
+    else
+    {
+        Console.WriteLine("Add some songs!");
+    }
+}
+
+/// <summary>
+/// Ejercicio 34 del curso con valor Void
+/// </summary>
+private static void Ejercicio34(string[] args)
+    {
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+    Console.WriteLine($"You rated the song{summerStrut[1]} {ratings[1]} stars");
+}
+
+/// <summary>
+/// Ejercicio 35 del curso con valor Void
+/// </summary>
+private static void Ejercicio35(string[] args)
+{
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+    summerStrut[7] = "Cardi B's I Like it";
+    ratings[7] = 5;
+}
+/// <summary>
+/// Ejercicio 36 del curso con valor Void
+/// </summary>
+private static void Ejercicio36(string[] args)
+{
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+    int threeRating = Array.IndexOf(ratings, 3);
+    Console.WriteLine($"Song number {threeRating + 1} is rated three stars");
+    string SongsummerStrut = Array.Find(summerStrut, characters => characters.Length > 10);
+    Console.WriteLine($"The first song that has more than 10 characters in the title is{SongsummerStrut}.");
+}
+/// <summary>
+/// Ejercicio 37 del curso con valor Void
+/// </summary>
+private static void Ejercicio37(string[] args)
+{
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+    int threeRating = Array.IndexOf(ratings, 3);
+    Console.WriteLine($"Song number {threeRating + 1} is rated three stars");
+    string SongsummerStrut = Array.Find(summerStrut, characters => characters.Length > 10);
+    Console.WriteLine($"The first song that has more than 10 characters in the title is {SongsummerStrut}.");
+    Array.Sort(summerStrut);
+    string firstSong = summerStrut[0];
+    string lastSong = summerStrut[7];
+    Console.WriteLine($"The first song that has more than 10 characters in the title is now {firstSong}");
+    Console.WriteLine($"The first song that has more than 10 characters in the title is now {lastSong}");
+}
+
+private static void Ejercicio38(string[] args)
+{
+    string[] summerStrut;
+
+    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+    string[] summerStrutCopy = new string[7];
+    Array.Copy(summerStrut, summerStrutCopy, 0);
+    Console.Write(summerStrutCopy);
+
+    Array.Reverse(summerStrut);
+    string firstSong = summerStrut[0];
+    string lastSong = summerStrut[7];
+    Console.WriteLine(firstSong);
+    Console.WriteLine(lastSong);
+    Array.Clear(ratings, 0, ratings.Length);
+    Console.WriteLine(ratings[0]);
 }
