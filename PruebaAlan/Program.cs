@@ -52,6 +52,16 @@ namespace PruebaAlan
             Ejercicio38();
         }
 
+        private static void Ejercicio38()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Ejercicio37()
+        {
+            throw new NotImplementedException();
+        }
+
         private static void Ejercicio36()
         {
             throw new NotImplementedException();
