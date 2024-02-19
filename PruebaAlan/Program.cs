@@ -10,7 +10,7 @@ namespace PruebaAlan
         /// <summary>
         /// Funcion de entrada del programa del programa
         /// </summary>
-        public static void Ejercicio18(string[] args)
+        public static void Main(string[] args)
         {
             Ejercicio1();
             int ages = Ejercicio2();
@@ -43,146 +43,8 @@ namespace PruebaAlan
             Ejercicio29();
             Ejercicio30();
             Ejercicio31();
-        }
 
-        private static void Ejercicio31()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio30()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio29()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio28()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio27()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio26()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio25()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio24()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio23()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio22()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio21()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio20()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio19()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio18()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio17()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio16()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio15()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio14()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio13()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio12()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio11()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio10()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio9()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio8()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio7()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio6()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio5()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio4(int jupiterAge)
-        {
-            throw new NotImplementedException();
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -227,7 +89,8 @@ namespace PruebaAlan
         {
             Console.WriteLine("¿How long have you lived in Mexico?");
             string mexicoInput = Console.ReadLine();
-            Console.WriteLine($"{mexicoInput} years!!! That's insane, awesome, you must know a lot from the culture indeed");
+            Console.WriteLine(
+                $"{mexicoInput} years!!! That's insane, awesome, you must know a lot from the culture indeed");
             Console.WriteLine("Do you want to know something interesting? (yes/no)");
             string response = Console.ReadLine();
 
@@ -244,7 +107,8 @@ namespace PruebaAlan
         {
             if (response.ToLower() == "yes")
             {
-                Console.WriteLine("That's awesome, Do you Know that If you were living in Jupider you will be much more younger than in Earth");
+                Console.WriteLine(
+                    "That's awesome, Do you Know that If you were living in Jupider you will be much more younger than in Earth");
             }
             else
             {
@@ -267,7 +131,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 5 del curso con valor Void
         /// </summary>
-        private static void Ejercicio5(string[] args)
+        private static void Ejercicio5()
         {
             // Number of students
             int students = 18;
@@ -282,7 +146,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 6 del curso con valor Void
         /// </summary>
-        private static void Ejercicio6(string[] args)
+        private static void Ejercicio6()
         {
             // Number of students
             int students = 18;
@@ -337,10 +201,12 @@ namespace PruebaAlan
         private static void Ejercicio9(string[] args)
         {
             // First string variable
-            string firstSentence = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.";
+            string firstSentence =
+                "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.";
 
             // Second string variable
-            string firstSpeech = "\"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\"";
+            string firstSpeech =
+                "\"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\"";
 
             Console.WriteLine(firstSentence);
             Console.WriteLine("\n");
@@ -357,7 +223,8 @@ namespace PruebaAlan
             // Declare the variables
             string beginning = " Be aware the people from Mars are on their way to earth";
             string middle = "Came without any previous messeage, all of the sudden they were on your lands ";
-            string end = " As how they came, that's how they went, and left the planet taking inside of their ships hostages ";
+            string end =
+                " As how they came, that's how they went, and left the planet taking inside of their ships hostages ";
 
             // Concatenate the string and the variables
             string story = beginning + middle + " and hidding in the woods." + end + ".";
@@ -398,7 +265,8 @@ namespace PruebaAlan
             int passwordCheck = password.IndexOf("!");
 
             // Print results
-            Console.WriteLine($"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
+            Console.WriteLine(
+                $"The user password is {password}. Its length is {passwordLength} and it receives a {passwordCheck} check.");
         }
 
         /// <summary>
@@ -431,7 +299,7 @@ namespace PruebaAlan
         {
             // Script line
             string script = "Close on a portrait of the HANDSOME PRINCE --" +
-            " as the BEAST'S giant paw slashes it.";
+                            " as the BEAST'S giant paw slashes it.";
 
             // Get camera directions
             int charPosition = script.IndexOf("Close");
@@ -686,94 +554,94 @@ namespace PruebaAlan
             // Call DecoratePlanet() and TryParse() here
             String welcomeMessage = DecoratePlanet(destination);
 
-        public static String outcome = Int32.TryParse(galaxyString, out galaxyInt);
-        // Print results
-        Console.WriteLine(welcomeMessage);
-        Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
+            //public static String outcome = Int32.TryParse(galaxyString, out galaxyInt);
+            // Print results
+            Console.WriteLine(welcomeMessage);
+            Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
 
+        }
+
+        // Define a method that returns a string
+        public static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+        }
+
+        // Define a method with out
+        public static string Whisper(string phrase, out bool wasWhisperCalled)
+        {
+            wasWhisperCalled = true;
+            return phrase.ToLower();
+        }
+
+        /// <summary>
+        /// Ejercicio 28 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio28(string[] args)
+        {
+            Welcome("Earth");
+            double days = 500;
+            double rotations = DaysToRotations(days);
+            Console.WriteLine($"In {days} days, the Earth has rotated {rotations} time(s).");
+        }
+
+        void Welcome(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        static double DaysToRotations(double days) => days / 365;
+
+        static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
+
+        /// <summary>
+        /// Ejercicio 28 del curso con valor Void
+        /// </summary>
+        private public static bool IsLong(string word)
+        {
+            return word.Length > 8;
+        }
+
+        private static void Ejercicio29(string[] args)
+        {
+            // Array to be used as first argument
+            string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
+            Array.Find(adjectives, IsLong);
+
+            // Call Array.Find() and 
+            // Pass in the array and method as arguments
+            string firstLongAdjective = Array.Find(adjectives, IsLong);
+
+            Console.WriteLine($"The first long word is: {firstLongAdjective}.");
+        }
+
+        private static void Ejercicio30(string[] args)
+        {
+            string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+            bool makesContact = Array.Exists(spaceRocks, (string s) => s == "meteorite");
+
+            if (makesContact)
+            {
+                Console.WriteLine("At least one space rock has reached the Earth's surface!");
+            }
+        }
+
+        private static bool HitGround(string s)
+        {
+            return s == "meteorite";
+        }
+
+        private static void Ejercicio31(string[] args)
+        {
+            string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+            bool makesContact = Array.Exists(spaceRocks, s => s == "meteorite");
+
+            if (makesContact)
+            {
+                Console.WriteLine("At least one space rock has reached the Earth's surface!");
+            }
+        }
     }
-
-    // Define a method that returns a string
-    public static string DecoratePlanet(string planet)
-    {
-        return $"*..*..* Welcome to {planet} *..*..*";
-    }
-
-    // Define a method with out
-    public static string Whisper(string phrase, out bool wasWhisperCalled)
-    {
-        wasWhisperCalled = true;
-        return phrase.ToLower();
-    }
-
-    /// <summary>
-    /// Ejercicio 28 del curso con valor Void
-    /// </summary>
-    private static void Ejercicio28(string[] args)
-    {
-        Welcome("Earth");
-        double days = 500;
-        double rotations = DaysToRotations(days);
-        Console.WriteLine($"In {days} days, the Earth has rotated {rotations} time(s).");
-    }
-
-    void Welcome(string v)
-    {
-        throw new NotImplementedException();
-    }
-
-    static double DaysToRotations(double days) => days / 365;
-
-    static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
-}
-/// <summary>
-/// Ejercicio 28 del curso con valor Void
-/// </summary>
-private public static bool IsLong(string word)
-{
-    return word.Length > 8;
-}
-
-private static void Ejercicio29 (string[] args)
-{
-    // Array to be used as first argument
-    string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
-    Array.Find(adjectives, IsLong);
-
-    // Call Array.Find() and 
-    // Pass in the array and method as arguments
-    string firstLongAdjective = Array.Find(adjectives, IsLong);
-
-    Console.WriteLine($"The first long word is: {firstLongAdjective}.");
-}
-
-private static void Ejercicio30(string[] args)
-{
-    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
-
-    bool makesContact = Array.Exists(spaceRocks, (string s) => s == "meteorite");
-
-    if (makesContact)
-    {
-        Console.WriteLine("At least one space rock has reached the Earth's surface!");
-    }
-}
-
-private static bool HitGround(string s)
-{
-    return s == "meteorite";
-}
-
-private static void Ejercicio31(string[] args)
-{
-    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
-
-    bool makesContact = Array.Exists(spaceRocks, s => s == "meteorite");
-
-    if (makesContact)
-    {
-        Console.WriteLine("At least one space rock has reached the Earth's surface!");
-    }
-} 
-
 }
