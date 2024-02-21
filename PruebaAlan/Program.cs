@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace PruebaAlan
 {
@@ -10,12 +11,12 @@ namespace PruebaAlan
         /// <summary>
         /// Funcion de entrada del programa del programa
         /// </summary>
-        public static void Ejercicio18(string[] args)
+        public static void Main(string[] args)
         {
             Ejercicio1();
             int ages = Ejercicio2();
             int jupiterAge = (int)Ejercicio3(ages);
-            Ejercicio4(jupiterAge);
+            Ejercicio4("response", jupiterAge);
             Ejercicio5();
             Ejercicio6();
             Ejercicio7();
@@ -44,187 +45,6 @@ namespace PruebaAlan
             Ejercicio30();
             Ejercicio31();
             Ejercicio32();
-            Ejercicio33();
-            Ejercicio34();
-            Ejercicio35();
-            Ejercicio36();
-            Ejercicio37();
-            Ejercicio38();
-        }
-
-        private static void Ejercicio38()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio37()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio36()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio35()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio34()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio33()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio32()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio31()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio30()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio29()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio28()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio27()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio26()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio25()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio24()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio23()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio22()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio21()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio20()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio19()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio18()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio17()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio16()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio15()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio14()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio13()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio12()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio11()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio10()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio9()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio8()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio7()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio6()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio5()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static void Ejercicio4(int jupiterAge)
-        {
-            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -309,7 +129,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 5 del curso con valor Void
         /// </summary>
-        private static void Ejercicio5(string[] args)
+        private static void Ejercicio5()
         {
             // Number of students
             int students = 18;
@@ -324,7 +144,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 6 del curso con valor Void
         /// </summary>
-        private static void Ejercicio6(string[] args)
+        private static void Ejercicio6()
         {
             // Number of students
             int students = 18;
@@ -339,7 +159,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 7 del curso con valor Void
         /// </summary>
-        private static void Ejercicio7(string[] args)
+        private static void Ejercicio7()
         {
             // Create variables
             int numberOne = 12932;
@@ -358,7 +178,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 8 del curso con valor Void
         /// </summary>
-        private static void Ejercicio8(string[] args)
+        private static void Ejercicio8()
         {
             double numberOne = 6.5;
             double numberTwo = 4;
@@ -376,7 +196,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 9 del curso con valor Void
         /// </summary>
-        private static void Ejercicio9(string[] args)
+        private static void Ejercicio9()
         {
             // First string variable
             string firstSentence = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.";
@@ -394,7 +214,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 10 del curso con valor Void
         /// </summary>
-        private static void Ejercicio10(string[] args)
+        private static void Ejercicio10()
         {
             // Declare the variables
             string beginning = " Be aware the people from Mars are on their way to earth";
@@ -411,7 +231,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 11 del curso con valor Void
         /// </summary>
-        private static void Ejercicio11(string[] args)
+        private static void Ejercicio11()
         {
             // Declare the variables
             string beginning = "Once upon a time,";
@@ -428,7 +248,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 12 del curso con valor Void
         /// </summary>
-        private static void Ejercicio12(string[] args)
+        private static void Ejercicio12()
         {
             // Create password
             string password = "a92301j2add";
@@ -446,7 +266,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 13 del curso con valor Void
         /// </summary>
-        private static void Ejercicio13(string[] args)
+        private static void Ejercicio13()
         {
             // dna strand
             string startStrand = "ATGCGATGAGCTTAC";
@@ -469,7 +289,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 14 del curso con valor Void
         /// </summary>
-        private static void Ejercicio14(string[] args)
+        private static void Ejercicio14()
         {
             // Script line
             string script = "Close on a portrait of the HANDSOME PRINCE --" +
@@ -498,7 +318,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 15 del curso con valor Void
         /// </summary>
-        private static void Ejercicio15(string[] args)
+        private static void Ejercicio15()
         {
             bool answerOne = 500 < 20;
 
@@ -510,7 +330,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 16 del curso con valor Void
         /// </summary>
-        private static void Ejercicio16(string[] args)
+        private static void Ejercicio16()
         {
             double timeToDinner = 4;
             double distance = 95;
@@ -523,7 +343,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 17 del curso con valor Void
         /// </summary>
-        private static void Ejercicio17(string[] args)
+        private static void Ejercicio17()
         {
             bool beach = true;
             bool hiking = false;
@@ -537,7 +357,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 18 del curso con valor Void
         /// </summary>
-        private static void Ejercicio18(string[] args)
+        private static void Ejercicio18()
         {
             int socks = 6;
             if (socks <= 3)
@@ -549,7 +369,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 19 del curso con valor Void
         /// </summary>
-        private static void Ejercicio19(string[] args)
+        private static void Ejercicio19()
         {
             int people = 12;
             string weather = "nice";
@@ -566,7 +386,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 20 del curso con valor Void
         /// </summary>
-        private static void Ejercicio20(string[] args)
+        private static void Ejercicio20()
         {
             int guests = 0;
             if (guests >= 4)
@@ -586,7 +406,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 21 del curso con valor Void
         /// </summary>
-        private static void Ejercicio21(string[] args)
+        private static void Ejercicio21()
         {
             // Code from Checkpoint 1
             // string genre = "Horror";
@@ -626,7 +446,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 22 del curso con valor Void
         /// </summary>
-        private static void Ejercicio22(string[] args)
+        private static void Ejercicio22()
         {
             int pepperLength = 4;
             string message = (pepperLength >= 3.5) ? " ready!" : "wait a little longer";
@@ -636,31 +456,33 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 23 del curso con valor Void
         /// </summary>
-        private static void Ejercicio23(string[] args)
+        private static void Ejercicio23()
         {
             Console.WriteLine(DecoratePlanet("Jupiter"));
-        }
 
-        private static string DecoratePlanet(string planet)
-        {
-            return $"*..*..* Welcome to {planet} *..*..*";
+            static string DecoratePlanet(string planet)
+            {
+                return $"*..*..* Welcome to {planet} *..*..*";
+            }
+
+            Console.ReadLine();
         }
 
         /// <summary>
         /// Ejercicio 24 del curso con valor Void
         /// </summary>
-        private static void Ejercicio24(string[] args)
+        private static void Ejercicio24()
         {
             Console.WriteLine(DecoratePlanet("Mars"));
             Console.WriteLine("Is Pluto really a dwarf...?");
             Console.WriteLine(IsPlutoADwarf());
             Console.WriteLine("Then how many planets are there in the galaxy...?");
             Console.WriteLine(CountThePlanets());
-        }
 
-        private static string DecoratePlanet(string planet)
-        {
-            return $"*..*..* Welcome to {planet} *..*..*";
+            static string DecoratePlanet(string planet)
+            {
+                return $"*..*..* Welcome to {planet} *..*..*";
+            }
         }
 
         private static bool IsPlutoADwarf()
@@ -677,7 +499,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 25 del curso con valor Void
         /// </summary>
-        private static void Ejercicio25(string[] args)
+        private static void Ejercicio25()
         {
             string ageAsString = "102";
             string nameAsString = "Granny";
@@ -690,9 +512,9 @@ namespace PruebaAlan
 
             int nameAsInt;
             bool outcome2;
-            /// Return value outcome2///
+
             outcome2 = int.TryParse(nameAsString, out nameAsInt);
-            /// Out variable is nameAsInt///
+
             Console.WriteLine(outcome2);
             Console.WriteLine(nameAsInt);
         }
@@ -700,7 +522,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 26 del curso con valor Void
         /// </summary>
-        private static void Ejercicio26(string[] args)
+        private static void Ejercicio26()
         {
             string statement = "GARRRR";
             string murmur = Whisper(statement, out bool marker);
@@ -716,7 +538,7 @@ namespace PruebaAlan
         /// <summary>
         /// Ejercicio 27 del curso con valor Void
         /// </summary>
-        public static void Ejercicio27(string[] args)
+        private static void Ejercicio27()
         {
             // Define variables
             string destination = "Neptune";
@@ -726,236 +548,103 @@ namespace PruebaAlan
             bool outcome;
 
             // Call DecoratePlanet() and TryParse() here
-            String welcomeMessage = DecoratePlanet(destination);
+            welcomeMessage = DecoratePlanet(destination);
 
-        public static string outcome = Int32.TryParse(galaxyString, out galaxyInt);
-        // Print results
-        Console.WriteLine(welcomeMessage);
-        Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
+            outcome = int.TryParse(galaxyString, out galaxyInt);
 
+            // Print results
+            Console.WriteLine(welcomeMessage);
+            Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
+
+            // Define a method that returns a string
+            static string DecoratePlanet(string planet)
+            {
+                return $"*..*..* Welcome to {planet} *..*..*";
+            }
+        }
+
+        /// <summary>
+        /// Ejercicio 28 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio28()
+        {
+            Welcome("Earth");
+            double days = 500;
+            double rotations = DaysToRotations(days);
+            Console.WriteLine($"In {days} days, the Earth has rotated {rotations} time(s).");
+
+            static double DaysToRotations(double days) => days / 365;
+
+            static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
+        }
+
+        /// <summary>
+        /// Ejercicio 29 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio29()
+        {
+            string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
+
+            Predicate<string> isLong = null;
+
+            // Remove this line since it doesn't assign the result
+            // Array.Find(adjectives, IsLong);
+            string firstLongAdjective = Array.Find(adjectives, isLong);
+
+            Console.WriteLine($"The first long word is: {firstLongAdjective}.");
+        }
+
+        /// <summary>
+        /// Ejercicio 30 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio30()
+        {
+            string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+            bool makesContact = Array.Exists(spaceRocks, (string s) => s == "meteorite");
+
+            if (makesContact)
+            {
+                Console.WriteLine("At least one space rock has reached the Earth's surface!");
+            }
+        }
+
+        /// <summary>
+        /// Ejercicio 31 del curso con valor Void
+        /// </summary>
+        private static bool Ejercicio31()
+        {
+            string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
+
+            bool makesContact = Array.Exists(spaceRocks, s => s == "meteorite");
+
+            if (makesContact)
+            {
+                Console.WriteLine("At least one space rock has reached the Earth's surface!");
+            }
+
+            return makesContact;
+        }
+
+        /// <summary>
+        /// Ejercicio 32 del curso con valor Void
+        /// </summary>
+        private static void Ejercicio32()
+        {
+            int[] nums = { 0, 555, 252, 3, 9, 101 };
+            bool hasBigNum = Array.Exists(nums, IsBig);
+
+            bool hasSmallNum = Array.Exists(nums, IsSmall);
+
+            bool hasMediumNum = Array.Exists(nums, (n) => n >= 10 && n <= 100);
+
+            Console.WriteLine($"Any big #s? {hasBigNum}");
+            Console.WriteLine($"Any small #s? {hasSmallNum}");
+            Console.WriteLine($"Any medium #s? {hasMediumNum}");
+
+            static bool IsBig(int n) => n > 100;
+
+            static bool IsSmall(int n) => n < 10;
+        }
     }
-
-    // Define a method that returns a string
-    public static string DecoratePlanet(string planet)
-    {
-        return $"*..*..* Welcome to {planet} *..*..*";
-    }
-
-    // Define a method with out
-    public static string Whisper(string phrase, out bool wasWhisperCalled)
-    {
-        wasWhisperCalled = true;
-        return phrase.ToLower();
-    }
-
-    /// <summary>
-    /// Ejercicio 28 del curso con valor Void
-    /// </summary>
-    private static void Ejercicio28(string[] args)
-    {
-        Welcome("Earth");
-        double days = 500;
-        double rotations = DaysToRotations(days);
-        Console.WriteLine($"In {days} days, the Earth has rotated {rotations} time(s).");
-    }
-
-    void Welcome(string v)
-    {
-        throw new NotImplementedException();
-    }
-
-    static double DaysToRotations(double days) => days / 365;
-
-    static void Welcome(string planet) => Console.WriteLine($"Welcome to {planet}!");
-}
-
-/// <summary>
-/// Ejercicio 29 del curso con valor Void
-/// </summary>
-private public static bool IsLong(string word) => word.Length > 8;
-
-private static void Ejercicio29 (string[] args)
-{
-    // Array to be used as first argument
-    string[] adjectives = { "rocky", "mountainous", "cosmic", "extraterrestrial" };
-    Array.Find(adjectives, IsLong);
-
-    // Call Array.Find() and 
-    // Pass in the array and method as arguments
-    string firstLongAdjective = Array.Find(adjectives, IsLong);
-
-    Console.WriteLine($"The first long word is: {firstLongAdjective}.");
-}
-/// <summary>
-/// Ejercicio 30 del curso con valor Void
-/// </summary>
-private static void Ejercicio30(string[] args)
-{
-    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
-
-    bool makesContact = Array.Exists(spaceRocks, (string s) => s == "meteorite");
-
-    if (makesContact)
-    {
-        Console.WriteLine("At least one space rock has reached the Earth's surface!");
-    }
-}
-/// <summary>
-/// Ejercicio 31 del curso con valor Void
-/// </summary>
-private static bool HitGround(string s)
-{
-    return s == "meteorite";
-}
-
-private static void Ejercicio31(string[] args)
-{
-    string[] spaceRocks = { "meteoroid", "meteor", "meteorite" };
-
-    bool makesContact = Array.Exists(spaceRocks, s => s == "meteorite");
-
-    if (makesContact)
-    {
-        Console.WriteLine("At least one space rock has reached the Earth's surface!");
-    }
-}
-/// <summary>
-/// Ejercicio 32 del curso con valor Void
-/// </summary>
-private static void Ejercicio32(string[] args)
-{
-    int[] nums = { 0, 555, 252, 3, 9, 101 };
-
-    bool hasBigNum = Array.Exists(nums, IsBig);
-
-    bool hasSmallNum = Array.Exists(nums, IsSmall);
-
-    bool hasMediumNum = Array.Exists(nums, (n) => n >= 10 && n <= 100);
-
-    Console.WriteLine($"Any big #s? {hasBigNum}");
-    Console.WriteLine($"Any small #s? {hasSmallNum}");
-    Console.WriteLine($"Any medium #s? {hasMediumNum}");
-}
-
-static bool IsBig(int n) => n > 100;
-
-static bool IsSmall(int n) => n < 10;
-
-  }
-
-}
-/// <summary>
-/// Ejercicio 33 del curso con valor Void
-/// </summary>
-private static void Ejercicio33(string[] args)
-{
-    string[] summerStrut;
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-    int[] ratings;
-    ratings = new int[] { 1, 2, 3, 4, 5 };
-}
-
-private static void Ejercicio33(string[] args)
-{
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles", "Los Panchos" };
-
-    if (summerStrut.Length == 8)
-    {
-        Console.WriteLine("summerStrut Playlist is ready to go!");
-    }
-    else if (summerStrut.Length > 8)
-    {
-        Console.WriteLine("Too many songs!");
-    }
-    else
-    {
-        Console.WriteLine("Add some songs!");
-    }
-}
-
-/// <summary>
-/// Ejercicio 34 del curso con valor Void
-/// </summary>
-private static void Ejercicio34(string[] args)
-    {
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-
-    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
-
-    Console.WriteLine($"You rated the song{summerStrut[1]} {ratings[1]} stars");
-}
-
-/// <summary>
-/// Ejercicio 35 del curso con valor Void
-/// </summary>
-private static void Ejercicio35(string[] args)
-{
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-
-    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
-
-    summerStrut[7] = "Cardi B's I Like it";
-    ratings[7] = 5;
-}
-/// <summary>
-/// Ejercicio 36 del curso con valor Void
-/// </summary>
-private static void Ejercicio36(string[] args)
-{
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-
-    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
-    int threeRating = Array.IndexOf(ratings, 3);
-    Console.WriteLine($"Song number {threeRating + 1} is rated three stars");
-    string SongsummerStrut = Array.Find(summerStrut, characters => characters.Length > 10);
-    Console.WriteLine($"The first song that has more than 10 characters in the title is{SongsummerStrut}.");
-}
-/// <summary>
-/// Ejercicio 37 del curso con valor Void
-/// </summary>
-private static void Ejercicio37(string[] args)
-{
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-
-    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
-    int threeRating = Array.IndexOf(ratings, 3);
-    Console.WriteLine($"Song number {threeRating + 1} is rated three stars");
-    string SongsummerStrut = Array.Find(summerStrut, characters => characters.Length > 10);
-    Console.WriteLine($"The first song that has more than 10 characters in the title is {SongsummerStrut}.");
-    Array.Sort(summerStrut);
-    string firstSong = summerStrut[0];
-    string lastSong = summerStrut[7];
-    Console.WriteLine($"The first song that has more than 10 characters in the title is now {firstSong}");
-    Console.WriteLine($"The first song that has more than 10 characters in the title is now {lastSong}");
-}
-
-private static void Ejercicio38(string[] args)
-{
-    string[] summerStrut;
-
-    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-
-    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
-
-    string[] summerStrutCopy = new string[7];
-    Array.Copy(summerStrut, summerStrutCopy, 0);
-    Console.Write(summerStrutCopy);
-
-    Array.Reverse(summerStrut);
-    string firstSong = summerStrut[0];
-    string lastSong = summerStrut[7];
-    Console.WriteLine(firstSong);
-    Console.WriteLine(lastSong);
-    Array.Clear(ratings, 0, ratings.Length);
-    Console.WriteLine(ratings[0]);
 }
