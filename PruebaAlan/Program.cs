@@ -45,6 +45,7 @@ namespace PruebaAlan
             Ejercicio30();
             Ejercicio31();
             Ejercicio32();
+            Ejercicio33();
         }
 
         /// <summary>
@@ -645,6 +646,15 @@ namespace PruebaAlan
             static bool IsBig(int n) => n > 100;
 
             static bool IsSmall(int n) => n < 10;
+        }
+
+        private static void Ejercicio33()
+        {
+            string[] websites = { "twitter", "facebook", "gmail" };
+            foreach (string website in websites)
+            {
+                Console.WriteLine(website);
+            }
         }
     }
 }
