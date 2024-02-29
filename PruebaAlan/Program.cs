@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace PruebaAlan
 {
@@ -46,6 +47,9 @@ namespace PruebaAlan
             Ejercicio31();
             Ejercicio32();
             Ejercicio33();
+            Ejercicio34();
+            Ejercicio35();
+            Ejercicio36();
         }
 
         /// <summary>
@@ -57,8 +61,7 @@ namespace PruebaAlan
             Console.WriteLine("Hello good afternoon, welcome to PriceTravel");
             Console.WriteLine("¿What's your name?");
             string nombreinput = Console.ReadLine();
-            Console.WriteLine($"Hello {nombreinput}, I'm glad to assist you as your personal AI");
-            Console.WriteLine("My name is Os");
+            Console.WriteLine($"Hello {nombreinput},My name is Os I'm glad to assist you as your personal AI");
         }
 
         /// <summary>
@@ -66,7 +69,6 @@ namespace PruebaAlan
         /// </summary>
         private static int Ejercicio2()
         {
-            Console.WriteLine("Ejercicio 2");
             Console.WriteLine("How old are you?");
             string ageInput = Console.ReadLine();
 
@@ -92,6 +94,7 @@ namespace PruebaAlan
             string mexicoInput = Console.ReadLine();
             Console.WriteLine($"{mexicoInput} years!!! That's insane, awesome, you must know a lot from the culture indeed");
             Console.WriteLine("Do you want to know something interesting? (yes/no)");
+
             string response = Console.ReadLine();
 
             double jupiterYears = 11.86;
@@ -109,7 +112,7 @@ namespace PruebaAlan
             {
                 Console.WriteLine("That's awesome, Do you Know that If you were living in Jupider you will be much more younger than in Earth");
             }
-            else
+            else if (response.ToLower() == "no")
             {
                 Console.WriteLine("Maybe next time");
             }
@@ -121,7 +124,7 @@ namespace PruebaAlan
             {
                 Console.WriteLine(jupiterAge);
             }
-            else
+            else if (response.ToLower() == "no")
             {
                 Console.WriteLine("Okay,See you next time");
             }
@@ -174,6 +177,7 @@ namespace PruebaAlan
 
             // Print the lowest number
             Console.WriteLine(Math.Min(numberTwoSqrt, numberOneSqrt));
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -655,6 +659,50 @@ namespace PruebaAlan
             {
                 Console.WriteLine(website);
             }
+        }
+
+        private static void Ejercicio34()
+        {
+            int i = 1;
+            while (i <= 10)
+            {
+                if (i % 2 == 0)
+                {
+                    i++;
+                    continue;
+                }
+
+                if (i == 9)
+                {
+                    break;
+                }
+
+                Console.WriteLine(i);
+            }
+        }
+
+        private static void Ejercicio35()
+        {
+            Random rnd = new Random();
+            int secretNumber = rnd.Next(1, 11);
+            int numberGuessed = 0;
+            Console.WriteLine("Random Num :" + secretNumber);
+
+            do
+            {
+                Console.WriteLine("Enter a number between 1 & 10 :");
+                numberGuessed = Convert.ToInt32(Console.ReadLine());
+            }
+            while (secretNumber != numberGuessed);
+            Console.WriteLine("You guessed it it was {0}" + secretNumber);
+        }
+
+        private static void Ejercicio36()
+        {
+            StringBuilder myStringBuilder = new StringBuilder("Pato: Es una mascota comun");
+            _ = myStringBuilder[0];
+            Console.WriteLine(myStringBuilder.ToString());
+            Console.ReadKey();
         }
     }
 }
