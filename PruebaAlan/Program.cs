@@ -50,6 +50,11 @@ namespace PruebaAlan
             Ejercicio34();
             Ejercicio35();
             Ejercicio36();
+            Ejercicio37();
+            Ejercicio38();
+            Ejercicio39();
+            Ejercicio40();
+            Ejercicio41();
         }
 
         /// <summary>
@@ -703,6 +708,45 @@ namespace PruebaAlan
             _ = myStringBuilder[0];
             Console.WriteLine(myStringBuilder.ToString());
             Console.ReadKey();
+        }
+
+        private static double Ejercicio37(double x = 1, double y = 1)
+        {
+            return x * y;
+        }
+
+        private static void Ejercicio38()
+        {
+            double x = 5;
+            double y = 4;
+            Console.WriteLine("5 * 4 = {0}" + Ejercicio37(x, y));
+        }
+
+        private static void Ejercicio39(ref int num3, ref int num4)
+        {
+            int temp = num3;
+            num3 = num4;
+            num4 = temp;
+        }
+
+        private static void Ejercicio40()
+        {
+            int num3 = 10;
+            int num4 = 20;
+            Console.WriteLine("Before Swap num1 : {0} num2 : {1}", num3, num4);
+            Ejercicio39(ref num3, ref num4);
+        }
+
+        private static void Ejercicio41()
+        {
+            DateTime today = new DateTime(1998, 01, 18);
+            Console.WriteLine("Day of the Week : {0}" + today.DayOfWeek);
+            today = today.AddDays(1);
+            today = today.AddMonths(3);
+            today = today.AddYears(1);
+            Console.WriteLine("New Date : {0}" + today);
+            TimeSpan lunchTime = new TimeSpan(12, 30, 0);
+            lunchTime = lunchTime.Subtract(new TimeSpan(0, 15, 0));
         }
     }
 }
